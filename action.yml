@@ -1,0 +1,18 @@
+name: Custom Javascript Action
+description: Just a test javascript action
+inputs:
+  bucket:
+    description: AWS bucket name
+    required: true
+  region:
+    description: AWS bucket region
+    required: true
+  folder:
+    description: Paht to folder storing the artifact to be uploaded
+    required: true
+outputs:
+  site-url:
+    description: Url to website landing page
+runs:
+  using: node16
+  main: main.js
